@@ -5,10 +5,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-    max-width: 600px;
+    max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
 }
+
 
 .element {
     background-color: #A2D2FF;
@@ -22,27 +23,21 @@
     grid-column: 1/4;
 }
 
-#naglowek {
+
+#naglowek, #pronouns, #relationship,
+#futaa, #mediaa, #zainteresowaniaa, #omniee, #zdjj {
     background-color: #BDE0FE;
     border-radius: 20px;
     padding: 10px;
 }
 
-#pronouns {
-    background-color: #BDE0FE;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-#relationship {
-    background-color: #BDE0FE;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 10px;
-}
 
 .gej {
     grid-column: 1/2;
+}
+
+#pronouns {
+    margin-bottom: 5px;
 }
 
 .o-mnie {
@@ -71,7 +66,7 @@
 }
 
 .img img {
-    max-height: 300px;
+    height: 300px;
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -82,16 +77,10 @@
     justify-content: center;
 }
 
-.copy-text {
+.copy-text, #IG {
     cursor: pointer;
     color: black;
     text-decoration: none;
-}
-
-#IG {
-    color: black;
-    text-decoration: none;
-
 }
 
 .socjale {
@@ -109,37 +98,40 @@
     top: 90%;
 }
 
-#futaa {
-    background-color: #BDE0FE;
-    min-width: 50%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-}
 
-#mediaa {
-    display: flex;
-    flex-direction: column;
-    min-height: 40%;
-    background-color: #BDE0FE;
-    padding: 10px;
-    border-radius: 20px;
-}
+@media (max-width: 768px) {
 
-#zainteresowaniaa {
-    background-color: #BDE0FE;
-    border-radius: 20px;
-    padding: 10px;
-}
+    .kontener {
+        grid-template-columns: 1fr; 
+    }
 
-#omniee {
-    background-color: #BDE0FE;
-    padding: 10px;
-    border-radius: 20px;
-}
+    .header,
+    .gej,
+    .o-mnie,
+    .zainteresowania,
+    .media,
+    .img,
+    .futa {
+        grid-column: 1/2 !important; 
+    }
 
-#zdjj {
-    background-color: #BDE0FE;
-    padding: 10px;
-    border-radius: 20px;
+    .img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img {
+        height: auto;
+        width: 90%;
+        margin: 0 0 15px 0;
+    }
+
+    .socjale {
+        font-size: 1.5em;
+    }
+
+    #msg {
+        position: static;
+        margin-top: 10px;
+    }
 }
