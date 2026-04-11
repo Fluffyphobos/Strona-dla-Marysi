@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marysia :3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontener">
+        <header class="element header">
+            <div id="naglowek">
+            <h1>Marysia </h1>
+            <p>Page about me :3</p>
+            </div>
+        </header>
+            
+        <aside class="element gej">
+            <div id="pronouns">
+            <h2>Pronouns:</h2>
+            <p>She/her</p>
+            </div>
+            <div id="relationship">
+            <h2>Relationship status:</h2>
+            <p>Taken by my lovely gf Maja</p>
+            </div>
+
+        </aside>
+            
+        <section class="element o-mnie">
+            <div id="omniee"> 
+                <p>Haii! I'm Marysia, but you can also call me Kermit. I'm 17 and I live in Switzerland but I'm from Poland.</p>
+                <h3>My fav vid games are:</h3>
+                <ul>
+                    <li>Metal gear (entire series)</li>
+                    <li>Minecraft</li>
+                    <li>Ready or not</li>
+                </ul>
+            </div>
+        </section>
+            
+        <section class="element zainteresowania">
+            <div id="zainteresowaniaa">
+                <h2>My hobbys:</h2>
+                <p>I love listening to music and playing video games. In the future I want to work with soldering computer components, mainly the motherboard.</p>
+            </div>
+        </section>
+            
+        <section class="element media">
+            <div id="mediaa">
+                <h2>My social media</h2>
+                <hr width="75%">
+                <div class="socjale">
+                    <a href="https://www.instagram.com/_lady_maria?igsh=cWczMThhM3l3dXNm" target="_blank" id="IG">Instagram</a>
+                    <span class="copy-text" onclick="copyText()">Discord</span>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <script>
+                function copyText() {
+                    navigator.clipboard.writeText("poprostu.femboy");
+                    document.getElementById("msg").innerText = "Coppied!";
+                setTimeout(() => {
+                    msg.innerText = "";
+                }, 3000);
+                }
+            </script>
+        </section>
+
+        <section class="element img">
+            <div id="zdjj">
+                <figure>
+                    <img src="img/2.webp" alt="">
+                    <img src="img/1.webp" alt="">
+                    <figcaption>This is me btw :3</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <footer class="element futa">
+            <div id="futaa">
+            <p>Made by: Maja Misztal :3</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
