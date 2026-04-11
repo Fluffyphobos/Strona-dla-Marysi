@@ -10,7 +10,6 @@
     border-radius: 20px;
 }
 
-
 .element {
     background-color: #A2D2FF;
     border-radius: 10px;
@@ -23,7 +22,6 @@
     grid-column: 1/4;
 }
 
-
 #naglowek, #pronouns, #relationship,
 #futaa, #mediaa, #zainteresowaniaa, #omniee, #zdjj {
     background-color: #BDE0FE;
@@ -31,13 +29,8 @@
     padding: 10px;
 }
 
-
 .gej {
     grid-column: 1/2;
-}
-
-#pronouns {
-    margin-bottom: 5px;
 }
 
 .o-mnie {
@@ -66,7 +59,9 @@
 }
 
 .img img {
-    height: 300px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -98,7 +93,6 @@
     top: 90%;
 }
 
-
 @media (max-width: 768px) {
 
     .kontener {
@@ -112,7 +106,7 @@
     .media,
     .img,
     .futa {
-        grid-column: 1/2 !important; 
+        grid-column: 1/2 !important;
     }
 
     .img {
@@ -121,8 +115,7 @@
     }
 
     .img img {
-        height: auto;
-        width: 90%;
+        max-width: 90%;
         margin: 0 0 15px 0;
     }
 
