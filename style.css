@@ -71,7 +71,7 @@
 }
 
 .img img {
-    height: 300px;
+    max-height: 300px;
     margin-right: 20px;
     border-radius: 10px;
 }
