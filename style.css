@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+#pronouns {
+    margin-bottom: 5px;
+}
+
 .header {
     grid-column: 1/4;
 }
